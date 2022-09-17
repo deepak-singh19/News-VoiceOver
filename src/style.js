@@ -1,9 +1,9 @@
-// import { makeStyles } from '@mui/styles';
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+
+const Root= styled('div')(({ theme }) => ({
 
 
-export default makeStyles((theme) => ({
-    footer: {
+    [`&.${classes.footer}`]: {
         textAlign: 'center',
         position: 'fixed',
         left: 0,
@@ -18,14 +18,14 @@ export default makeStyles((theme) => ({
             display: 'none',
         },
     },
-    link: {
+    [`& .${classes.link}`]: {
         textDecoration: 'none',
         color: 'rgba(21, 101, 192)',
     },
-    image: {
+    [`& .${classes.image}`]: {
         marginLeft: 20,
     },
-    card: {
+    [`& .${classes.card}`]: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -47,7 +47,7 @@ export default makeStyles((theme) => ({
             },
         },
     },
-    infoContainer: {
+    [`& .${classes.infoContainer}`]: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-around',
@@ -55,7 +55,7 @@ export default makeStyles((theme) => ({
             flexDirection: 'column',
         },
     },
-    logoContainer: {
+    [`& .${classes.logoContainer}`]: {
         padding: '0 5%',
         display: 'flex',
         justifyContent: 'space-around',
@@ -66,7 +66,7 @@ export default makeStyles((theme) => ({
             textAlign: 'center',
         },
     },
-    alanLogo: {
+    [`& .${classes.alanLogo}`]: {
         height: '27vmin',
         borderRadius: '15%',
         padding: '0 5%',
@@ -75,4 +75,9 @@ export default makeStyles((theme) => ({
             height: '35vmin',
         },
     },
-}));
+
+
+
+    }));
+
+    export default Root;
