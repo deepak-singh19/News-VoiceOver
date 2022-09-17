@@ -10,7 +10,7 @@ import {
   CardMedia,
   Button,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import classNames from "classnames";
 
 import useStyles from './styles'

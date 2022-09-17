@@ -2,14 +2,14 @@ import { makeStyles } from "@mui/styles";
 
 export default makeStyles({
 
-    media:{
-        height:250,
+    media: {
+        height: 250,
     },
     border: {
-        border:'solid',
+        border: 'solid',
     },
-    fullHeightCard:{
-        height:'100%',
+    fullHeightCard: {
+        height: '100%',
     },
     card: {
         display: 'flex',
@@ -17,28 +17,28 @@ export default makeStyles({
         justifyContent: 'space-between',
         borderBottom: '10px solid white',
     },
-    activeCard:{
+    activeCard: {
         borderBottom: '10px solid #22289a',
 
     },
-    grid:{
-        display:'flex',
+    grid: {
+        display: 'flex',
     },
     details: {
         display: 'flex',
-        margin:'20px',
+        margin: '20px',
         justifyContent: 'space-between',
 
     },
-    title:{
-        padding:'0 16px',
+    title: {
+        padding: '0 16px',
     },
-    cardActions:{
-        padding :'0 16px 8px 16px',
+    cardActions: {
+        padding: '0 16px 8px 16px',
         display: 'flex',
-        justifyContent:'space-between'
+        justifyContent: 'space-between'
     },
 
-    
+
 
 });
