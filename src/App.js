@@ -1,7 +1,7 @@
 import React, {useState ,useEffect} from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import wordsToNumbers from "words-to-numbers";
-import NewsCards from "./components/NewsCards/newsCards";
+import NewsCards from "./components/NewsCards/newsCards.js";
 import useStyles from './styles';
 
 
