@@ -3,6 +3,7 @@ import alanBtn from "@alan-ai/alan-sdk-web";
 import wordsToNumbers from "words-to-numbers";
 import NewsCards from "./components/NewsCards/newsCards.js";
 import useStyles from './styles';
+import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 
 
 const alankey ="3886ef766e016f777bf7d88827c3d6cd2e956eca572e1d8b807a3e2338fdd0dc/stage";
@@ -11,6 +12,7 @@ const App=()=>{
 
     const[newsArticles, setNewsArticles] = useState([]);
     const[activeArticle, setActiveArticle]= useState(-1);
+    const theme = createTheme();
 
     const classes= useStyles();
 
@@ -49,12 +51,14 @@ const App=()=>{
 
     },[]);
     return(
-        <div>
+        <ThemeProvider theme={theme}>
+            <div>
             <div className={classes.logoContainer}>
                 <img  src="https://voicebot.ai/wp-content/uploads/2019/10/alan.jpg" className={classes.alanLogo} alt="alan logo"/>
             </div>
             <NewsCards articles={newsArticles} activeArticle={activeArticle}/>
         </div>
+        </ThemeProvider>
     );
 }
 

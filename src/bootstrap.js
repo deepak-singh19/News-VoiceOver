@@ -1,2 +1,2 @@
-import { install } from '@material-ui/styles';
+import { install } from '@mui/styles';
 install();

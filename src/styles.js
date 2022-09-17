@@ -1,6 +1,7 @@
 // import { makeStyles } from '@mui/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
+
 export default makeStyles((theme) => ({
     footer: {
         textAlign: 'center',
@@ -13,7 +14,7 @@ export default makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         height: '120px',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             display: 'none',
         },
     },
@@ -36,7 +37,7 @@ export default makeStyles((theme) => ({
         margin: '0 12px',
         textAlign: 'center',
         height: '25vmin',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             flexDirection: 'column-reverse',
             textAlign: 'center',
             width: '100%',
@@ -50,7 +51,7 @@ export default makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-around',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
         },
     },
@@ -60,7 +61,7 @@ export default makeStyles((theme) => ({
         justifyContent: 'space-around',
         alignItems: 'center',
         width: '100%',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             flexDirection: 'column-reverse',
             textAlign: 'center',
         },
@@ -70,7 +71,7 @@ export default makeStyles((theme) => ({
         borderRadius: '15%',
         padding: '0 5%',
         margin: '3% 0',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             height: '35vmin',
         },
     },
