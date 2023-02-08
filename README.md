@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Live Site
- https://63264a9edefec8224b897777--prismatic-croissant-4e8daf.netlify.app/
+ https://prismatic-croissant-4e8daf.netlify.app/
 
 ## Available Scripts
 
